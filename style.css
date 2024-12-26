@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin: 10px 0 20px;
+}
+
+/* Style for the image container */
+.image-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #6ab0f3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
