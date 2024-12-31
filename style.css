@@ -55,7 +55,7 @@ nav {
         rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.5)
     ), 
-    url('your-image-path.jpg'); /* Replace with your image file path */
+    url('Assets/testing.png'); /* Replace with your image file path */
     background-size: cover;
     background-repeat: no-repeat;
     border-top-left-radius: 20px; /* Rounded top-left corner */
