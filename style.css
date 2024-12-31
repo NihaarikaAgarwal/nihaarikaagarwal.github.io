@@ -67,13 +67,16 @@ header p {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 150px;
+    width: 50vw; /* Half the width of the viewport */
     height: auto;
+    background: linear-gradient(to right, #6ab0f3, #444); /* Gradient from left to right */
+    border-radius: 10px; /* Optional: rounded corners for the container */
 }
 
 .image-container img {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners for the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
