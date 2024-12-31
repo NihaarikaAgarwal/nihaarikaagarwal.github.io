@@ -17,7 +17,7 @@ body {
     height: 10cm; /* Height of the image */
     background: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), /* Gradient effect */
-        url('your-image-path.jpg'); /* Replace with the actual image path */
+        url('Assets/testing.png'); /* Replace with the actual image path */
     background-size: cover; /* Ensures the image covers the div */
     background-repeat: no-repeat; /* Prevents repeating the image */
     background-position: center; /* Centers the image */
