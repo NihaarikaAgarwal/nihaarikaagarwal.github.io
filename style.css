@@ -43,23 +43,23 @@ nav {
     background-color: #444;
 }
 
-/* Gradient Image on Left */
+/* Gradient Image on Right */
 .gradient-image {
     position: absolute;
     top: 50px;
-    left: 0;
-    width: 15cm; /* Set the width */
-    height: 10cm; /* Set the height */
+    right: 0; /* Align to the right */
+    width: 15cm; /* Set width */
+    height: 10cm; /* Set height */
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.5)
     ), 
-    url('Assets/testing.png'); /* Replace with your image file path */
+    url('your-image-path.jpg'); /* Replace with your image file path */
     background-size: cover;
     background-repeat: no-repeat;
-    border-top-right-radius: 20px; /* Optional: Rounded top-right corner */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add shadow */
+    border-top-left-radius: 20px; /* Rounded top-left corner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
     z-index: 999;
 }
 
