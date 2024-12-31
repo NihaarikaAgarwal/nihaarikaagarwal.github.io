@@ -1,86 +1,114 @@
-/* Set the page's background to white */
+ /* General Styles */
 body {
-    background-color: white; /* Page background color */
-    font-family: Arial, sans-serif; /* Default font */
-    margin: 0; /* Remove browser's default margin */
-    padding: 0; /* Remove browser's default padding */
-    height: 100vh; /* Full viewport height */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
 }
 
-/* Styling for the gradient image */
-.gradient-image {
+/* Navigation Menu */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Add spacing between tabs */
+}
+
+.nav-tabs li {
+    display: inline; /* Ensure inline display for individual list items */
+}
+
+.nav-tabs a {
+    color: #6ab0f3;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding for better clickability */
+    border-radius: 5px; /* Optional: Rounded corners for tabs */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-tabs a:hover {
+    background-color: #444; /* Background color on hover */
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    padding: 100px 20px 50px; /* Extra padding to compensate for fixed nav */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin: 10px 0 20px;
+}
+
+/* Image Section */
+.image-container {
     position: absolute;
-    top: 10px; /* Space from the top */
-    right: 10px; /* Space from the right */
-    width: 15cm; /* Width of the image */
-    height: 10cm; /* Height of the image */
-    background: 
-        /* Set the page's background to white */
-body {
-    background-color: white; /* Page background color */
-    font-family: Arial, sans-serif; /* Default font */
-    margin: 0; /* Remove browser's default margin */
-    padding: 0; /* Remove browser's default padding */
-    height: 100vh; /* Full viewport height */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: auto;
 }
 
-/* Styling for the gradient image */
-.gradient-image {
-    position: absolute;
-    top: 10px; /* Space from the top */
-    right: 10px; /* Space from the right */
-    width: 15cm; /* Width of the image */
-    height: 10cm; /* Height of the image */
-    background: 
-        /* linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), /* Gradient overlay */
-        url('Assets/testing.png'); /* Replace with the actual image path */
-    background-size: cover; /* Ensures the image covers the div */
-    background-repeat: no-repeat; /* Prevents repeating the image */
-    background-position: center; /* Centers the image */
-    border-radius: 10px; /* Adds rounded corners (optional) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow around the image */
-    z-index: 10; /* Places the image above other elements */
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Basic styling for the heading */
-h1 {
-    text-align: center; /* Center-aligns the heading */
-    margin-top: 50px; /* Adds space from the top */
-    color: black; /* Text color */
-    font-size: 2.5rem; /* Heading font size */
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    border-bottom: 1px solid #333;
 }
 
-/* Basic styling for the paragraph */
-p {
-    text-align: center; /* Center-aligns the paragraph */
-    margin-top: 20px; /* Adds space below the heading */
-    color: black; /* Text color */
-    font-size: 1.2rem; /* Paragraph font size */
+section h2 {
+    font-size: 2rem;
+    color: #ffffff;
 }
 
-        url('./your-image-path.jpg'); /* Replace with the actual image path */
-    background-size: cover; /* Ensures the image covers the div */
-    background-repeat: no-repeat; /* Prevents repeating the image */
-    background-position: center; /* Centers the image */
-    border-radius: 10px; /* Adds rounded corners (optional) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow around the image */
-    z-index: 10; /* Places the image above other elements */
+section p {
+    font-size: 1rem;
+    color: #cccccc;
 }
 
-/* Basic styling for the heading */
-h1 {
-    text-align: center; /* Center-aligns the heading */
-    margin-top: 50px; /* Adds space from the top */
-    color: black; /* Text color */
-    font-size: 2.5rem; /* Heading font size */
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
 }
 
-/* Basic styling for the paragraph */
-p {
-    text-align: center; /* Center-aligns the paragraph */
-    margin-top: 20px; /* Adds space below the heading */
-    color: black; /* Text color */
-    font-size: 1.2rem; /* Paragraph font size */
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #6ab0f3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
