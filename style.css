@@ -53,13 +53,14 @@ nav {
     height: 10cm;
     background: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), 
-        url('your-image-path.jpg'); /* Replace with your actual image path */
+        url('Assets/testing.png'); /* Replace with your actual image path */
     background-size: cover;
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
+
 
 
 /* Header */
