@@ -2,12 +2,12 @@
 <html>
 <head>
 <style>
-/* Container with the gradient and image */
+/* Container with image and gradient overlay */
 #grad1 {
-  height: 200px; /* Set desired height */
+  height: 300px; /* Set desired height */
   background-image: 
-    linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)), /* Gradient */
-    url('Assets/testing.png'); /* Your image */
+    linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), /* Gradient for transparency */
+    url('path-to-your-image.jpg'); /* Your image */
   background-size: cover; /* Ensures the image covers the container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent image repetition */
@@ -16,8 +16,8 @@
 </head>
 <body>
 
-<h1>Linear Gradient with an Image</h1>
-<p>This example adds a gradient effect that fades over an image.</p>
+<h1>Image with Gradient Transparency</h1>
+<p>The image is fully opaque on the left and gradually becomes transparent on the right.</p>
 
 <div id="grad1"></div>
 
