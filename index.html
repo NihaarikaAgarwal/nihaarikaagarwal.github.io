@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nihaarika Agarwal</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            height: 300px; /* Adjust height as needed */
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), 
+                url('Assets/testing.png'); /* Ensure the path is correct */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Menu -->
     <nav>
-        <ul class="nav-tabs">
+        <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -25,10 +73,8 @@
         <p>MS Computer Sci</p>
     </header>
 
-    <!-- Image Section with Gradient Effect -->
-    <div class="image-container">
-        <!-- The gradient is applied as a background; no need for an <img> tag -->
-    </div>
+    <!-- Image Section -->
+    <div class="image-container"></div>
 
     <!-- About Section -->
     <section id="about">
