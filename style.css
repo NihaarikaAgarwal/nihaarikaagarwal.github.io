@@ -6,37 +6,37 @@ body {
     color: white;
 }
 
-/* Container for the fading effect */
+/* Fading image container */
 .fading-image-container {
     position: relative;
     width: 100%; /* Full width */
     height: 100vh; /* Full viewport height */
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
+    overflow: hidden;
 }
 
 /* Image styling */
 .fading-image-container img {
+    width: 50%; /* Image takes half the screen width */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensures the image fills its area proportionally */
     position: absolute;
+    right: 0; /* Align to the right */
     top: 0;
-    right: 0;
-    width: 50%; /* Cover half the width */
-    height: 100%; /* Full height */
-    object-fit: cover; /* Ensures proper aspect ratio */
-    z-index: 0; /* Keep image below gradient */
+    z-index: 0; /* Keep image behind gradient */
 }
 
 /* Gradient fade effect */
-.fading-image-container::after {
+.fading-image-container::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     width: 50%; /* Match image width */
     height: 100%; /* Full height of the container */
-    background: linear-gradient(to left, rgba(18, 18, 18, 0), #121212); /* Gradient fades into the background */
-    z-index: 1; /* Layer above the image */
-    pointer-events: none; /* Ensure overlay does not interfere with interactions */
+    background: linear-gradient(to left, rgba(18, 18, 18, 0), #121212); /* Fade to dark background */
+    z-index: 1; /* Gradient layer above image */
+    pointer-events: none; /* Prevent interaction with the gradient */
 }
