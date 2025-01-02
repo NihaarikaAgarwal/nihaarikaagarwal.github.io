@@ -11,21 +11,21 @@ body {
     position: relative;
     width: 100%; /* Full width */
     height: 100vh; /* Full viewport height */
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
-    overflow: hidden;
 }
 
 /* Image styling */
 .fading-image-container img {
     width: 50%; /* Image takes half the screen width */
-    height: 100%; /* Full height of the container */
-    object-fit: cover; /* Ensures the image fills its area proportionally */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensures proportional scaling */
     position: absolute;
     right: 0; /* Align to the right */
     top: 0;
-    z-index: 0; /* Keep image behind gradient */
+    z-index: 0; /* Behind the gradient */
 }
 
 /* Gradient fade effect */
@@ -34,9 +34,9 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%; /* Match image width */
+    width: 50%; /* Match the image width */
     height: 100%; /* Full height of the container */
-    background: linear-gradient(to left, rgba(18, 18, 18, 0), #121212); /* Fade to dark background */
-    z-index: 1; /* Gradient layer above image */
-    pointer-events: none; /* Prevent interaction with the gradient */
+    background: linear-gradient(to left, rgba(18, 18, 18, 0), #121212); /* Gradient fade effect */
+    z-index: 1; /* Above the image */
+    pointer-events: none; /* Prevent interaction */
 }
