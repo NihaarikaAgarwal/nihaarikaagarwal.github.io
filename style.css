@@ -30,6 +30,7 @@ body {
 
 /* Gradient fade effect */
 .fading-image-container::before {
+    border: 2px solid red; /* Debugging aid */
     content: '';
     position: absolute;
     top: 0;
