@@ -2,16 +2,22 @@
 <html>
 <head>
 <style>
+/* Container with the gradient and image */
 #grad1 {
-  height: 200px;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  height: 200px; /* Set desired height */
+  background-image: 
+    linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)), /* Gradient */
+    url('path-to-your-image.jpg'); /* Your image */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
 }
 </style>
 </head>
 <body>
 
-<h1>Linear Gradient - Transparency</h1>
-<p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p>
+<h1>Linear Gradient with an Image</h1>
+<p>This example adds a gradient effect that fades over an image.</p>
 
 <div id="grad1"></div>
 
