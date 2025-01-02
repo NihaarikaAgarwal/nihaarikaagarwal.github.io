@@ -1,10 +1,12 @@
-/* Gradient Effect for Image */
 .image-container {
-  height: 300px; /* Adjust as per your requirement */
+  height: 300px; /* Adjust height */
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), /* White-to-transparent gradient */
-    url('Assets/testing.png'); /* Path to your image */
-  background-size: cover; /* Ensures the image covers the container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevents image repetition */
+    linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), 
+    url('Assets/testing.png'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid red; /* Debugging */
+  background-color: lightgray; /* Fallback for testing */
 }
+
