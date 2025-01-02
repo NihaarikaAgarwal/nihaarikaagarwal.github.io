@@ -2,19 +2,19 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #121212; /* Dark background */
     color: white;
 }
 
-/* Fading image container */
+/* Container for the fading effect */
 .fading-image-container {
     position: relative;
     width: 100%; /* Full width */
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh; /* Full viewport height */
     overflow: hidden;
-    display: flex; /* Center content if needed */
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Align content to the left */
 }
 
 /* Image styling */
@@ -22,20 +22,21 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%; /* Adjust width as needed */
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers its container */
+    width: 50%; /* Cover half the width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensures proper aspect ratio */
     z-index: 0; /* Keep image below gradient */
 }
 
 /* Gradient fade effect */
-.fading-image-container::before {
+.fading-image-container::after {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #121212, rgba(18, 18, 18, 0)); /* Fading effect */
-    z-index: 1; /* Place above the image */
+    right: 0;
+    width: 50%; /* Match image width */
+    height: 100%; /* Full height of the container */
+    background: linear-gradient(to left, rgba(18, 18, 18, 0), #121212); /* Gradient fades into the background */
+    z-index: 1; /* Layer above the image */
+    pointer-events: none; /* Ensure overlay does not interfere with interactions */
 }
