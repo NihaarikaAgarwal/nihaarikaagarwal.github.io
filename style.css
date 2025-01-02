@@ -1,12 +1,99 @@
-.image-container {
-  height: 300px; /* Adjust height */
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), 
-    url('Assets/testing.png'); /* Ensure the path is correct */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid red; /* Debugging */
-  background-color: lightgray; /* Fallback for testing */
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
 }
 
+/* Navigation Menu */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Add spacing between tabs */
+}
+
+.nav-tabs li {
+    display: inline; /* Ensure inline display for individual list items */
+}
+
+.nav-tabs a {
+    color: #6ab0f3;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding for better clickability */
+    border-radius: 5px; /* Optional: Rounded corners for tabs */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-tabs a:hover {
+    background-color: #444; /* Background color on hover */
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    padding: 100px 20px 50px; /* Extra padding to compensate for fixed nav */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin: 10px 0 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    border-bottom: 1px solid #333;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+section p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #6ab0f3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
