@@ -7,38 +7,38 @@
     <style>
         /* Place the CSS code snippet here */
         .container .box {
-    width: 540px;
+    display: flex; /* Use flexbox for better layout control */
+    justify-content: space-between; /* Add space between boxes */
     margin: 50px auto; /* Center the container and add vertical spacing */
-    display: table;
-}
-
-.container .box .box-row {
-    display: table-row;
-    margin-bottom: 20px; /* Add vertical spacing between rows */
+    width: 90%; /* Adjust width for responsiveness */
 }
 
 .container .box .box-cell {
-    display: table-cell;
-    width: 33%;
-    padding: 20px; /* Add internal spacing */
-    margin: 10px; /* Add margin for spacing between cells */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    background: rgba(255, 255, 255, 0.5); /* Transparent background with 50% opacity */
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Optional border for better visibility */
+    flex: 1; /* Make all boxes equal in size */
+    padding: 20px; /* Internal spacing within each box */
+    margin: 0 10px; /* Space between boxes */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background: rgba(255, 255, 255, 0.5); /* Transparent background */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Optional border */
     border-radius: 8px; /* Rounded corners */
+    color: black; /* Default text color */
+    text-align: justify; /* Align text neatly */
 }
 
+/* Optional: Add specific styles for individual boxes if needed */
 .container .box .box-cell.box1 {
-    color: white; /* Text color */
+    background: rgba(0, 128, 0, 0.5); /* Green with transparency */
+    color: white; /* Text color for readability */
 }
 
 .container .box .box-cell.box2 {
-    color: black;
+    background: rgba(144, 238, 144, 0.5); /* Light green with transparency */
 }
 
 .container .box .box-cell.box3 {
-    color: black;
+    background: rgba(0, 255, 0, 0.5); /* Lime green with transparency */
 }
+
 </style>
 </head>
 
