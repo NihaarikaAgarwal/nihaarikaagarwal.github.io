@@ -2,245 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihaarika Agarwal</title>
-    
-    <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: black;
-        }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-        /* Navigation Menu */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #222;
-            padding: 10px 0;
-            z-index: 1000;
-        }
+		body {
+			font-family: Arial, sans-serif;
+		}
 
-        .nav-tabs {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+		.container {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 20px;
+		}
 
-        .nav-tabs li {
-            display: inline;
-        }
+		.box {
+			flex: 1;
+			margin: 0 10px;
+			padding: 20px;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			background-color: rgba(0, 0, 0, 0.05);
+			text-align: center;
+		}
 
-        .nav-tabs a {
-            display: inline-block;
-            color: #6ab0f3;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: bold;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+		.box:first-child {
+			margin-left: 0;
+		}
 
-        .nav-tabs a:hover {
-            background-color: #444;
-        }
+		.box:last-child {
+			margin-right: 0;
+		}
 
-        /* Header Section */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 100px 20px 50px;
-            text-align: left;
-        }
+		.project-title {
+			font-size: 18px;
+			font-weight: bold;
+			color: #007BFF;
+			text-decoration: none;
+			margin-bottom: 10px;
+			display: block;
+		}
 
-        header h1 {
-            font-size: 4rem;
-            margin: 0;
-        }
+		.project-title:hover {
+			text-decoration: underline;
+		}
 
-        header p {
-            font-size: 1.2rem;
-            color: #aaaaaa;
-            margin: 10px 0 20px;
-        }
-
-        /* Image Section with Gradient */
-        .image-container {
-            flex: 1;
-            height: 60vh;
-            position: relative;
-            background-image: url('Assets/testing.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .image-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to right, white, rgba(255, 255, 255, 0.1));
-            z-index: 1;
-        }
-
-        /* Section Styles */
-        section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 25px 20px;
-            min-height: 80vh;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            color: #000000;
-            margin-bottom: 20px;
-        }
-
-        section p {
-            font-size: 1rem;
-            color: #cccccc;
-            text-align: center;
-        }
-
-        /* Projects Section */
-        #projects {
-            display: flex;
-            flex-wrap: wrap; /* Allows wrapping to the next line for responsiveness */
-            justify-content: center; /* Center-aligns the boxes horizontally */
-            gap: 20px; /* Adds consistent spacing between boxes */
-            padding: 20px;
-        }
-
-        #projects .project-box {
-            flex: 1 1 calc(30% - 20px); /* Adjust width dynamically while maintaining spacing */
-            margin: 10px;
-            padding: 20px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        #projects .project-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer p {
-            font-size: 1rem;
-        }
-
-        footer a {
-            color: #6ab0f3;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+		.description {
+			font-size: 14px;
+			color: #333;
+			margin-top: 10px;
+		}
+	</style>
 </head>
 
 <body>
-    <!-- Navigation Menu -->
-    <nav>
-        <ul class="nav-tabs">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
 
-    <!-- Header Section -->
-    <header>
-        <div>
-            <h1>NIHAARIKA AGARWAL</h1>
-            <p>MS Computer Science @ ASU</p>
-        </div>
-        <div class="image-container"></div>
-    </header>
+	<div class="container">
+		<div class="box">
+			<a href="https://example.com/project1" class="project-title" target="_blank">Project 1</a>
+			<div class="description">This project focuses on developing a robust AI tool for automated task management. It incorporates cutting-edge machine learning models.</div>
+		</div>
+		<div class="box">
+			<a href="https://example.com/project2" class="project-title" target="_blank">Project 2</a>
+			<div class="description">A web-based application aimed at enhancing user experience through interactive design and seamless performance.</div>
+		</div>
+		<div class="box">
+			<a href="https://example.com/project3" class="project-title" target="_blank">Project 3</a>
+			<div class="description">This project explores the intersection of data analytics and visualization to provide insightful reports for businesses.</div>
+		</div>
+	</div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm an MSCS student at ASU passionate about software development, machine learning, Natural language processing, and exploring new technologies. My work spans AI, RPA, LLMs, and Python. I thrive on innovation and problem-solving, with an aim to create impactful, trustworthy solutions. Always eager to learn and grow.</p>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>List your work experience here.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Machine learning, NLP, RPA, Arduino <br> Coding languages: Python, C, C++, VB Script <br> Tools: MS Excel, GitHub, JIRA</p>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research">
-        <h2>Research</h2>
-        <p>Describe your research interests here.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-box">
-            <h3><a href="https://github.com/project1" target="_blank">Project 1</a></h3>
-            <p>Brief description of Project 1 goes here. This is a two-line description.</p>
-        </div>
-        <div class="project-box">
-            <h3><a href="https://github.com/project2" target="_blank">Project 2</a></h3>
-            <p>Brief description of Project 2 goes here. This is a two-line description.</p>
-        </div>
-        <div class="project-box">
-            <h3><a href="https://github.com/project3" target="_blank">Project 3</a></h3>
-            <p>Brief description of Project 3 goes here. This is a two-line description.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>
-            <a href="https://linkedin.com/in/nihaarikaagarwal" target="_blank">
-                <img src="Assets/linkedin.png" alt="LinkedIn" style="width:40px; height:40px; margin-right:10px;">
-            </a>
-            <a href="https://github.com/NihaarikaAgarwal" target="_blank">
-                <img src="Assets/github.png" alt="GitHub" style="width:40px; height:40px;">
-            </a>
-        </p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Nihaarika Agarwal</p>
-    </footer>
 </body>
 
 </html>
