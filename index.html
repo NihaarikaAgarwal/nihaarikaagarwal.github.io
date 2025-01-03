@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nihaarika Agarwal</title>
-    /* <link rel="stylesheet" href="style.css"> */
+    <link rel="stylesheet" href="style.css">
     <style>
         /* General Styles */
         body {
@@ -38,6 +39,7 @@
         }
 
         .nav-tabs a {
+            display: inline-block;
             color: #6ab0f3;
             text-decoration: none;
             font-size: 1rem;
@@ -57,10 +59,12 @@
             justify-content: space-between;
             align-items: center;
             padding: 100px 20px 50px;
+            text-align: left;
         }
 
         header h1 {
             font-size: 4rem;
+            margin: 0;
         }
 
         header p {
@@ -112,46 +116,50 @@
             text-align: center;
         }
 
-        /* Project Section */
+        /* Projects Section */
         #projects {
             display: flex;
             justify-content: space-between;
             gap: 20px;
-            padding: 20px;
+            width: 100%;
             max-width: 1200px;
-            margin: auto;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         .project-box {
             flex: 1;
-            text-align: center;
+            background-color: transparent;
+            border: 2px solid #ccc;
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .project-box a {
-            font-size: 1.5rem;
-            font-weight: bold;
+        .project-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-box h3 a {
             color: #0073e6;
             text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
+            font-size: 1.5rem;
         }
 
-        .project-box a:hover {
+        .project-box h3 a:hover {
             text-decoration: underline;
         }
 
         .project-box p {
-            font-size: 1rem;
+            margin-top: 10px;
             color: #555;
+            font-size: 1rem;
         }
 
         /* Footer */
         footer {
+            margin-top: 40px;
             text-align: center;
             padding: 20px;
         }
@@ -170,6 +178,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation Menu -->
     <nav>
@@ -195,29 +204,60 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm an MSCS student at ASU passionate about software development, machine learning, and NLP. My work spans AI, RPA, and Python. I thrive on innovation and problem-solving.</p>
+        <p>Hi! I'm an MSCS student at ASU passionate about software development, machine learning, Natural language processing, and exploring new technologies. My work spans AI, RPA, LLMs, and Python. I thrive on innovation and problem-solving, with an aim to create impactful, trustworthy solutions. Always eager to learn and grow.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>List your work experience here.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Machine learning, NLP, RPA, Arduino <br> Coding languages: Python, C, C++, VB Script <br> Tools: MS Excel, GitHub, JIRA</p>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+        <h2>Research</h2>
+        <p>Describe your research interests here.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-box">
-            <a href="https://github.com/project1" target="_blank">Project 1</a>
-            <p>This project focuses on developing a robust AI tool for automated task management. It uses advanced ML models.</p>
+            <h3><a href="https://github.com/project1" target="_blank">Project 1</a></h3>
+            <p>Brief description of Project 1 goes here. This is a two-line description.</p>
         </div>
         <div class="project-box">
-            <a href="https://github.com/project2" target="_blank">Project 2</a>
-            <p>A web-based application aimed at enhancing user experience through interactive design and seamless performance.</p>
+            <h3><a href="https://github.com/project2" target="_blank">Project 2</a></h3>
+            <p>Brief description of Project 2 goes here. This is a two-line description.</p>
         </div>
         <div class="project-box">
-            <a href="https://github.com/project3" target="_blank">Project 3</a>
-            <p>Explores the intersection of data analytics and visualization to provide insightful reports for businesses.</p>
+            <h3><a href="https://github.com/project3" target="_blank">Project 3</a></h3>
+            <p>Brief description of Project 3 goes here. This is a two-line description.</p>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            <a href="https://linkedin.com/in/nihaarikaagarwal" target="_blank">
+                <img src="Assets/linkedin.png" alt="LinkedIn" style="width:40px; height:40px; margin-right:10px;">
+            </a>
+            <a href="https://github.com/NihaarikaAgarwal" target="_blank">
+                <img src="Assets/github.png" alt="GitHub" style="width:40px; height:40px;">
+            </a>
+        </p>
+    </section>
+
     <footer>
-        <p>© 2025 Nihaarika Agarwal. <a href="#contact">Contact Me</a></p>
+        <p>&copy; 2025 Nihaarika Agarwal</p>
     </footer>
 </body>
+
 </html>
