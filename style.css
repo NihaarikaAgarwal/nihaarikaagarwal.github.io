@@ -1,70 +1,35 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-}
+<style>
+    .container .box {
+        width: 540px;
+        margin: 50px auto; /* Center the container and add vertical spacing */
+        display: table;
+    }
 
-/* Navigation Menu */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222; /* Dark background for the nav bar */
-    z-index: 1000;
-}
+    .container .box .box-row {
+        display: table-row;
+    }
 
-.nav-tabs {
-    display: flex;
-    justify-content: space-between; /* Spread items across the width */
-    list-style: none;
-    margin: 0;
-    padding: 0 20px; /* Add padding on sides for spacing */
-}
+    .container .box .box-cell {
+        display: table-cell;
+        width: 33%;
+        padding: 20px; /* Add padding for internal spacing */
+        margin: 10px; /* Add margin for spacing between cells */
+        box-sizing: border-box; /* Ensure padding doesn't affect width */
+    }
 
-.nav-tabs li {
-    display: inline;
-}
+    .container .box .box-cell.box1 {
+        background: green;
+        color: white;
+        text-align: justify;
+    }
 
-.nav-tabs a {
-    display: inline-block; /* Ensure proper alignment */
-    color: #6ab0f3;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 10px 15px; /* Add padding for better clickability */
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+    .container .box .box-cell.box2 {
+        background: lightgreen;
+        text-align: justify;
+    }
 
-.nav-tabs a:hover {
-    background-color: #444; /* Change background color on hover */
-}
-
-/* Section Headings */
-section h2 {
-    font-size: 2rem;
-    color: black; /* Ensure headings are black */
-}
-
-/* Project Section */
-#projects {
-    display: flex; /* Flexbox to align project boxes horizontally */
-    flex-wrap: wrap; /* Allow project boxes to wrap to the next line if needed */
-    justify-content: center; /* Center the project boxes horizontally */
-    gap: 20px; /* Space between project boxes */
-    padding: 20px;
-}
-
-/* Project Boxes */
-.project-box {
-    width: 300px; /* Adjust the width of each project box */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+    .container .box .box-cell.box3 {
+        background: lime;
+        text-align: justify;
+    }
+</style>
