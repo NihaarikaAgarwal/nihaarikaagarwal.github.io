@@ -117,16 +117,41 @@
         }
 
         /* Projects Section */
-	    .container {
-            display: flex;
-            border: 2px solid black;
+        #projects {
+            text-align: left; /* Ensure section text alignment is left */
         }
- 
-        .box {
-            flex: 1;
-            margin: 15px;
-            padding: 40px;
+
+        #projects .project-box {
+            display: inline-block; /* Allow boxes to sit next to each other */
+            width: 30%; /* Set width for the boxes to ensure horizontal alignment */
+            margin: 10px; /* Add spacing between the boxes */
+            padding: 20px;
             border: 2px solid #ccc;
+            border-radius: 10px;
+            vertical-align: top; /* Align boxes vertically to the top */
+            background-color: #f9f9f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #projects .project-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        #projects h3 a {
+            color: #0073e6;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        #projects h3 a:hover {
+            text-decoration: underline;
+        }
+
+        #projects p {
+            margin-top: 10px;
+            color: #555;
+            font-size: 1rem;
         }
 
         /* Footer */
@@ -167,7 +192,7 @@
     <!-- Header Section -->
     <header>
         <div>
-            <h1>NIHAARIKA AGARWALll</h1>
+            <h1>NIHAARIKA AGARWALyy</h1>
             <p>MS Computer Science @ ASU</p>
         </div>
         <div class="image-container"></div>
@@ -177,24 +202,6 @@
     <section id="about">
         <h2>About Me</h2>
         <p>Hi! I'm an MSCS student at ASU passionate about software development, machine learning, Natural language processing, and exploring new technologies. My work spans AI, RPA, LLMs, and Python. I thrive on innovation and problem-solving, with an aim to create impactful, trustworthy solutions. Always eager to learn and grow.</p>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>List your work experience here.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Machine learning, NLP, RPA, Arduino <br> Coding languages: Python, C, C++, VB Script <br> Tools: MS Excel, GitHub, JIRA</p>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research">
-        <h2>Research</h2>
-        <p>Describe your research interests here.</p>
     </section>
 
     <!-- Projects Section -->
@@ -212,19 +219,6 @@
             <h3><a href="https://github.com/project3" target="_blank">Project 3</a></h3>
             <p>Brief description of Project 3 goes here. This is a two-line description.</p>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>
-            <a href="https://linkedin.com/in/nihaarikaagarwal" target="_blank">
-                <img src="Assets/linkedin.png" alt="LinkedIn" style="width:40px; height:40px; margin-right:10px;">
-            </a>
-            <a href="https://github.com/NihaarikaAgarwal" target="_blank">
-                <img src="Assets/github.png" alt="GitHub" style="width:40px; height:40px;">
-            </a>
-        </p>
     </section>
 
     <footer>
