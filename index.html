@@ -116,6 +116,38 @@
             text-align: center; /* Center-align the text */
         }
 
+        /* Project Boxes */
+        .project-box {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project-box h3 {
+            font-size: 1.5rem;
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
+
+        .project-box h3 a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .project-box h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .project-box p {
+            font-size: 1rem;
+            color: #555;
+        }
+
         /* Footer */
         footer {
             margin-top: 40px;
@@ -205,10 +237,21 @@
         <p>Describe your research interests and work here.</p>
     </section>
 
-    <!-- Projects Section -->
+   <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <p>Showcase your projects here.</p>
+        <div class="project-box">
+            <h3><a href="https://github.com/project1" target="_blank">Project 1</a></h3>
+            <p>Brief description of Project 1 goes here. This is a two-line description.</p>
+        </div>
+        <div class="project-box">
+            <h3><a href="https://github.com/project2" target="_blank">Project 2</a></h3>
+            <p>Brief description of Project 2 goes here. This is a two-line description.</p>
+        </div>
+        <div class="project-box">
+            <h3><a href="https://github.com/project3" target="_blank">Project 3</a></h3>
+            <p>Brief description of Project 3 goes here. This is a two-line description.</p>
+        </div>
     </section>
 
     <!-- Contact Section -->
