@@ -3,19 +3,41 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+		}
+
 		.container {
 			display: flex;
-			border: 2px solid black;
+			justify-content: space-between;
+			width: 100%;
+			padding: 20px; /* Adds padding around the container */
 		}
 
 		.box {
-			flex: 1;
-			margin: 15px;
-			padding: 40px;
+			flex: 1; /* Ensures equal width for all boxes */
+			margin: 0 10px; /* Adds spacing between the boxes */
+			padding: 20px;
 			border: 2px solid #ccc;
+			border-radius: 5px;
+			background-color: rgba(0, 0, 0, 0.1); /* Transparent background */
+			text-align: center; /* Centers text inside the boxes */
+		}
+
+		.box:first-child {
+			margin-left: 0; /* Removes extra space on the left */
+		}
+
+		.box:last-child {
+			margin-right: 0; /* Removes extra space on the right */
 		}
 	</style>
 </head>
