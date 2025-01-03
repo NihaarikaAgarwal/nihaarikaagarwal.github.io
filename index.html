@@ -117,47 +117,59 @@
         }
 
         /* Projects Section */
-                /* Projects Section */
-        #projects {
-            display: flex;
-            flex-wrap: wrap; /* Ensures responsiveness */
-            justify-content: space-between; /* Distributes boxes evenly with space */
-            gap: 20px; /* Adds space between boxes */
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+        {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-        .project-box {
-            flex: 1 1 calc(30% - 20px); /* Each box takes ~30% of the row with space for gaps */
-            background-color: transparent;
-            border: 2px solid #ccc;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+		body {
+			font-family: Arial, sans-serif;
+		}
 
-        .project-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+		.container {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 20px;
+		}
 
-        .project-box h3 a {
-            color: #0073e6;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
+		.box {
+			flex: 1;
+			margin: 0 10px;
+			padding: 20px;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			background-color: rgba(0, 0, 0, 0.05);
+			text-align: center;
+		}
 
-        .project-box h3 a:hover {
-            text-decoration: underline;
-        }
+		.box:first-child {
+			margin-left: 0;
+		}
 
-        .project-box p {
-            margin-top: 10px;
-            color: #555;
-            font-size: 1rem;
-        }
+		.box:last-child {
+			margin-right: 0;
+		}
+
+		.project-title {
+			font-size: 18px;
+			font-weight: bold;
+			color: #007BFF;
+			text-decoration: none;
+			margin-bottom: 10px;
+			display: block;
+		}
+
+		.project-title:hover {
+			text-decoration: underline;
+		}
+
+		.description {
+			font-size: 14px;
+			color: #333;
+			margin-top: 10px;
+		}
 
         /* Footer */
         footer {
