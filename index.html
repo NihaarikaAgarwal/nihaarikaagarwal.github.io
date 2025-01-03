@@ -1,85 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <style>
-        /* Place the CSS code snippet here */
-        .container {
-    display: flex; /* Arrange children horizontally */
-    justify-content: space-between; /* Space out the boxes evenly */
-    width: 100%; /* Ensure the container spans the full width of the page */
-    padding: 20px; /* Optional padding around the container */
-    box-sizing: border-box; /* Include padding in container dimensions */
-}
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<style>
+		.container {
+			display: flex;
+			border: 2px solid black;
+		}
 
-.box {
-    flex: 1; /* Equal width for all boxes */
-    margin: 0 10px; /* Add space between boxes */
-    padding: 20px; /* Internal spacing inside the box */
-    background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Optional border for visibility */
-    border-radius: 8px; /* Rounded corners for better aesthetics */
-    height: 200px; /* Fixed height for consistency */
-    box-sizing: border-box; /* Include padding and border in the box size */
-    text-align: justify; /* Align text neatly */
-}
-
-/* Remove extra margin from the first and last boxes */
-.box:first-child {
-    margin-left: 0;
-}
-
-.box:last-child {
-    margin-right: 0;
-}
-
-</style>
+		.box {
+			flex: 1;
+			margin: 15px;
+			padding: 40px;
+			border: 2px solid #ccc;
+		}
+	</style>
 </head>
 
-    </style>
-</head>
 <body>
-    <!-- Place the HTML section here -->
-    <body>
-    <!-- Other content of your page -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Existing project boxes -->
-        
-        <!-- Integrated GeeksforGeeks Divs -->
-        <div class="container">
-            <div class="box">
-                <div class="box-row">
-                    <div class="box-cell box1">
-                        It is a good platform to learn programming.
-                        It is an educational website. Prepare for
-                        the Recruitment drive of product-based
-                        companies like Microsoft, Amazon, Adobe, etc.
-                        with a free online placement preparation
-                        course.
-                    </div>
 
-                    <div class="box-cell box2">
-                        The course focuses on various MCQ's &
-                        Coding questions likely to be asked in
-                        the interviews & make your upcoming
-                        placement season efficient and successful.
-                    </div>
-
-                    <div class="box-cell box3">
-                        Any geeks can help other geeks by writing
-                        articles on the GeeksforGeeks, publishing
-                        articles follow few steps that are Articles
-                        that need little modification/improvement
-                        from reviewers are published first.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
+	<div class="container">
+		<div class="box">Box 1</div>
+		<div class="box">Box 2</div>
+		<div class="box">Box 3</div>
+	</div>
 
 </body>
+
 </html>
