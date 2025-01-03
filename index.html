@@ -100,7 +100,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 50px 20px;
+            padding: 25px 20px; /* Reduced padding for less space between sections */
             min-height: 80vh; /* Ensure sections span most of the viewport */
         }
 
@@ -167,28 +167,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-
-        /* Icon Styles */
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            text-decoration: none;
-        }
-
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-            transition: transform 0.3s;
-        }
-
-        .social-icons img:hover {
-            transform: scale(1.2);
-        }
     </style>
 </head>
 <body>
@@ -208,7 +186,7 @@
     <header>
         <div>
             <h1>NIHAARIKA AGARWAL</h1>
-            <p>MS Computer Science @ ASU</p>
+            <p>MS Computer Science</p>
         </div>
         <div class="image-container"></div>
     </header>
@@ -216,7 +194,7 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm an MSCS student at ASU passionate about software development, machine learning, Natural language processing and exploring new technologies. My work spans AI, RPA, LLMs, and Python. I thrive on innovation and problem-solving, with an aim to create impactful, trustworthy solutions. Always eager to learn and grow.</p>
+        <p>Write something about yourself here.</p>
     </section>
 
     <!-- Experience Section -->
@@ -228,7 +206,7 @@
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <p>Machine learning, NLP, RPA, Arduino <br> Coding languages: Python, C, C++, VB Script <br> Tools: MS excel, Github, JIRA</p>
+        <p>Highlight your skills here.</p>
     </section>
 
     <!-- Research Section -->
@@ -237,7 +215,7 @@
         <p>Describe your research interests and work here.</p>
     </section>
 
-   <!-- Projects Section -->
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-box">
@@ -257,19 +235,17 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Add your contact details here.</p>
-        <div class="social-icons">
-            <a href="https://linkedin.com/in/NihaarikaAgarwal" target="_blank">
-                <img src="Assets/linkedin.png" alt="LinkedIn">
+        <p>
+            <a href="https://linkedin.com/in/nihaarikaagarwal" target="_blank">
+                <img src="Assets/linkedin.png" alt="LinkedIn" style="width:40px; height:40px; margin-right:10px;">
             </a>
             <a href="https://github.com/NihaarikaAgarwal" target="_blank">
-                <img src="Assets/github.png" alt="GitHub">
+                <img src="Assets/github.png" alt="GitHub" style="width:40px; height:40px;">
             </a>
-        </div>
+        </p>
     </section>
 
     <footer>
-        <p>Check out my <a href="https://github.com/NihaarikaAgarwal" target="_blank">GitHub Profile</a></p>
     </footer>
 </body>
 </html>
