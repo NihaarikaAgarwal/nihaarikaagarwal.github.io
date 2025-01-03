@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white; /* Set background to white */
-    color: black; /* Set text color to black for better contrast */
+    background-color: white;
+    color: black;
 }
 
 /* Navigation Menu */
@@ -12,92 +12,39 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #222;
-    padding: 10px 0; /* Adjust padding for better appearance */
+    background-color: #222; /* Dark background for the nav bar */
     z-index: 1000;
 }
 
 .nav-tabs {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between; /* Spread items across the width */
-    max-width: 1200px; /* Optional: Limit the width of the navigation menu */
-    margin: 0 auto; /* Center the menu */
+    list-style: none;
+    margin: 0;
+    padding: 0 20px; /* Add padding on sides for spacing */
 }
 
 .nav-tabs li {
-    flex: 1; /* Make each menu item equal in width */
-    text-align: center; /* Center-align the text */
+    display: inline;
 }
 
 .nav-tabs a {
+    display: inline-block; /* Ensure proper alignment */
     color: #6ab0f3;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 10px 15px; /* Add padding for better clickability */
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .nav-tabs a:hover {
-    background-color: #444;
+    background-color: #444; /* Change background color on hover */
 }
 
-/* Header Section */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 20px 50px;
-    text-align: left;
-}
-
-header h1 {
-    font-size: 4rem;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #aaaaaa;
-    margin: 10px 0 20px;
-}
-
-/* Section Styles */
-section {
-    padding: 50px 20px;
-    border-bottom: 1px solid #333;
-}
-
+/* Section Headings */
 section h2 {
     font-size: 2rem;
-    color: black; /* Set section headings to black */
-}
-
-section p {
-    font-size: 1rem;
-    color: #555; /* Adjust text color for better readability */
-}
-
-/* Footer */
-footer {
-    margin-top: 40px;
-    text-align: center;
-    padding: 20px;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-footer a {
-    color: #6ab0f3;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    color: black; /* Ensure headings are black */
 }
