@@ -2,7 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background
+    background-color: white;
+    color: black;
 }
 
 /* Navigation Menu */
@@ -48,25 +49,22 @@ section h2 {
     color: black; /* Ensure headings are black */
 }
 
+/* Project Section */
+#projects {
+    display: flex; /* Flexbox to align project boxes horizontally */
+    flex-wrap: wrap; /* Allow project boxes to wrap to the next line if needed */
+    justify-content: center; /* Center the project boxes horizontally */
+    gap: 20px; /* Space between project boxes */
+    padding: 20px;
+}
+
 /* Project Boxes */
 .project-box {
-    width: 300px;
+    width: 300px; /* Adjust the width of each project box */
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
-#projects {
-    display: flex; /* Use flexbox to align project boxes horizontally */
-    flex-wrap: wrap; /* Allow items to wrap if the screen is too small */
-    justify-content: center; /* Center the project boxes */
-    gap: 20px; /* Add space between project boxes */
-    padding: 20px 0;
-}
-
-/* No need to change the .project-box style if you already have it */
-
