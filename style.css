@@ -13,7 +13,7 @@ nav {
     left: 0;
     width: 100%;
     background-color: #222;
-    padding: 10px 20px;
+    padding: 10px 0; /* Adjust padding for better appearance */
     z-index: 1000;
 }
 
@@ -22,12 +22,14 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
+    justify-content: space-between; /* Spread items across the width */
+    max-width: 1200px; /* Optional: Limit the width of the navigation menu */
+    margin: 0 auto; /* Center the menu */
 }
 
 .nav-tabs li {
-    display: inline;
+    flex: 1; /* Make each menu item equal in width */
+    text-align: center; /* Center-align the text */
 }
 
 .nav-tabs a {
@@ -99,7 +101,7 @@ section h2 {
 
 section p {
     font-size: 1rem;
-    color: #cccccc;
+    color: #555; /* Adjust text color for better readability */
 }
 
 /* Footer */
