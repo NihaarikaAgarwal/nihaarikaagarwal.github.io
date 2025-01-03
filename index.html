@@ -1,47 +1,104 @@
-<section id="projects">
-    <h2>Projects</h2>
-    <!-- Existing project boxes -->
-    <div class="project-box">
-        <h3><a href="https://github.com/project1" target="_blank">Project 1</a></h3>
-        <p>Brief description of Project 1 goes here. This is a two-line description.</p>
-    </div>
-    <div class="project-box">
-        <h3><a href="https://github.com/project2" target="_blank">Project 2</a></h3>
-        <p>Brief description of Project 2 goes here. This is a two-line description.</p>
-    </div>
-    <div class="project-box">
-        <h3><a href="https://github.com/project3" target="_blank">Project 3</a></h3>
-        <p>Brief description of Project 3 goes here. This is a two-line description.</p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+        /* Place the CSS code snippet here */
+        <head>
+    <title>Your Page Title</title>
+    <style>
+        .container .box {
+            width: 540px;
+            margin: 50px auto; /* Center the container and add vertical spacing */
+            display: table;
+        }
 
-    <!-- Integrated GeeksforGeeks Divs -->
-    <div class="container">
-        <div class="box">
-            <div class="box-row">
-                <div class="box-cell box1">
-                    It is a good platform to learn programming.
-                    It is an educational website. Prepare for
-                    the Recruitment drive of product-based
-                    companies like Microsoft, Amazon, Adobe, etc.
-                    with a free online placement preparation
-                    course.
-                </div>
+        .container .box .box-row {
+            display: table-row;
+        }
 
-                <div class="box-cell box2">
-                    The course focuses on various MCQ's &
-                    Coding questions likely to be asked in
-                    the interviews & make your upcoming
-                    placement season efficient and successful.
-                </div>
+        .container .box .box-cell {
+            display: table-cell;
+            width: 33%;
+            padding: 20px; /* Add padding for internal spacing */
+            margin: 10px; /* Add margin for spacing between cells */
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
+        }
 
-                <div class="box-cell box3">
-                    Any geeks can help other geeks by writing
-                    articles on the GeeksforGeeks, publishing
-                    articles follow few steps that are Articles
-                    that need little modification/improvement
-                    from reviewers are published first.
+        .container .box .box-cell.box1 {
+            background: green;
+            color: white;
+            text-align: justify;
+        }
+
+        .container .box .box-cell.box2 {
+            background: lightgreen;
+            text-align: justify;
+        }
+
+        .container .box .box-cell.box3 {
+            background: lime;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+    </style>
+</head>
+<body>
+    <!-- Place the HTML section here -->
+    <body>
+    <!-- Other content of your page -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Existing project boxes -->
+        <div class="project-box">
+            <h3><a href="https://github.com/project1" target="_blank">Project 1</a></h3>
+            <p>Brief description of Project 1 goes here. This is a two-line description.</p>
+        </div>
+        <div class="project-box">
+            <h3><a href="https://github.com/project2" target="_blank">Project 2</a></h3>
+            <p>Brief description of Project 2 goes here. This is a two-line description.</p>
+        </div>
+        <div class="project-box">
+            <h3><a href="https://github.com/project3" target="_blank">Project 3</a></h3>
+            <p>Brief description of Project 3 goes here. This is a two-line description.</p>
+        </div>
+
+        <!-- Integrated GeeksforGeeks Divs -->
+        <div class="container">
+            <div class="box">
+                <div class="box-row">
+                    <div class="box-cell box1">
+                        It is a good platform to learn programming.
+                        It is an educational website. Prepare for
+                        the Recruitment drive of product-based
+                        companies like Microsoft, Amazon, Adobe, etc.
+                        with a free online placement preparation
+                        course.
+                    </div>
+
+                    <div class="box-cell box2">
+                        The course focuses on various MCQ's &
+                        Coding questions likely to be asked in
+                        the interviews & make your upcoming
+                        placement season efficient and successful.
+                    </div>
+
+                    <div class="box-cell box3">
+                        Any geeks can help other geeks by writing
+                        articles on the GeeksforGeeks, publishing
+                        articles follow few steps that are Articles
+                        that need little modification/improvement
+                        from reviewers are published first.
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</body>
+
+</body>
+</html>
