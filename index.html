@@ -118,41 +118,27 @@
 
         /* Projects Section */
         #projects {
-            text-align: left; /* Ensure section text alignment is left */
-        }
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line for responsiveness */
+    justify-content: center; /* Center-aligns the boxes horizontally */
+    gap: 20px; /* Adds consistent spacing between boxes */
+    padding: 20px;
+}
 
-        #projects .project-box {
-            display: inline-block; /* Allow boxes to sit next to each other */
-            width: 30%; /* Set width for the boxes to ensure horizontal alignment */
-            margin: 10px; /* Add spacing between the boxes */
-            padding: 20px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            vertical-align: top; /* Align boxes vertically to the top */
-            background-color: #f9f9f9;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+#projects .project-box {
+    flex: 1 1 calc(30% - 20px); /* Adjust width dynamically while maintaining spacing */
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        #projects .project-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        #projects h3 a {
-            color: #0073e6;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
-
-        #projects h3 a:hover {
-            text-decoration: underline;
-        }
-
-        #projects p {
-            margin-top: 10px;
-            color: #555;
-            font-size: 1rem;
-        }
+#projects .project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
         /* Footer */
         footer {
