@@ -19,25 +19,44 @@
 			display: flex;
 			justify-content: space-between;
 			width: 100%;
-			padding: 20px; /* Adds padding around the container */
+			padding: 20px;
 		}
 
 		.box {
-			flex: 1; /* Ensures equal width for all boxes */
-			margin: 0 10px; /* Adds spacing between the boxes */
+			flex: 1;
+			margin: 0 10px;
 			padding: 20px;
 			border: 2px solid #ccc;
 			border-radius: 5px;
-			background-color: rgba(0, 0, 0, 0.1); /* Transparent background */
-			text-align: center; /* Centers text inside the boxes */
+			background-color: rgba(0, 0, 0, 0.05);
+			text-align: center;
 		}
 
 		.box:first-child {
-			margin-left: 0; /* Removes extra space on the left */
+			margin-left: 0;
 		}
 
 		.box:last-child {
-			margin-right: 0; /* Removes extra space on the right */
+			margin-right: 0;
+		}
+
+		.project-title {
+			font-size: 18px;
+			font-weight: bold;
+			color: #007BFF;
+			text-decoration: none;
+			margin-bottom: 10px;
+			display: block;
+		}
+
+		.project-title:hover {
+			text-decoration: underline;
+		}
+
+		.description {
+			font-size: 14px;
+			color: #333;
+			margin-top: 10px;
 		}
 	</style>
 </head>
@@ -45,9 +64,18 @@
 <body>
 
 	<div class="container">
-		<div class="box">Box 1</div>
-		<div class="box">Box 2</div>
-		<div class="box">Box 3</div>
+		<div class="box">
+			<a href="https://example.com/project1" class="project-title" target="_blank">Project 1</a>
+			<div class="description">This project focuses on developing a robust AI tool for automated task management. It incorporates cutting-edge machine learning models.</div>
+		</div>
+		<div class="box">
+			<a href="https://example.com/project2" class="project-title" target="_blank">Project 2</a>
+			<div class="description">A web-based application aimed at enhancing user experience through interactive design and seamless performance.</div>
+		</div>
+		<div class="box">
+			<a href="https://example.com/project3" class="project-title" target="_blank">Project 3</a>
+			<div class="description">This project explores the intersection of data analytics and visualization to provide insightful reports for businesses.</div>
+		</div>
 	</div>
 
 </body>
