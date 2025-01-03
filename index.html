@@ -117,10 +117,12 @@
         }
 
         /* Projects Section */
+                /* Projects Section */
         #projects {
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            justify-content: space-between; /* Distributes boxes evenly with space */
+            gap: 20px; /* Adds space between boxes */
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
@@ -128,7 +130,7 @@
         }
 
         .project-box {
-            flex: 1;
+            flex: 1 1 calc(30% - 20px); /* Each box takes ~30% of the row with space for gaps */
             background-color: transparent;
             border: 2px solid #ccc;
             padding: 20px;
