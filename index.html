@@ -1,258 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihaarika Agarwal</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS style to place three div side by side -->
     <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: white; /* Set background to white */
-            color: black; /* Set text color to black for better contrast */
+        .container .box {
+            width: 540px;
+            margin: 50px;
+            display: table;
         }
 
-        /* Navigation Menu */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%; /* Make navigation bar span the entire width */
-            background-color: #222; /* Dark background for the nav bar */
-            padding: 10px 0; /* Adjust padding for consistency */
-            z-index: 1000;
+        .container .box .box-row {
+            display: table-row;
         }
 
-        .nav-tabs {
-            display: flex;
-            justify-content: center; /* Center navigation items */
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        .container .box .box-cell {
+            display: table-cell;
+            width: 33%;
+            padding: 10px;
         }
 
-        .nav-tabs li {
-            display: inline;
+        .container .box .box-cell.box1 {
+            background: green;
+            color: white;
+            text-align: justify;
         }
 
-        .nav-tabs a {
-            display: inline-block;
-            color: #6ab0f3;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: bold;
-            padding: 10px 15px; /* Add padding for better clickability */
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        .container .box .box-cell.box2 {
+            background: lightgreen;
+            text-align: justify
         }
 
-        .nav-tabs a:hover {
-            background-color: #444; /* Change background color on hover */
-        }
-
-        /* Header Section */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 100px 20px 50px;
-            text-align: left;
-        }
-
-        header h1 {
-            font-size: 4rem;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            color: #aaaaaa;
-            margin: 10px 0 20px;
-        }
-
-        /* Image Section with Gradient */
-        .image-container {
-            flex: 1;
-            height: 60vh;
-            position: relative;
-            background-image: url('Assets/testing.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        /* Add Gradient */
-        .image-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to right, white, rgba(255, 255, 255, 0.1));
-            z-index: 1;
-        }
-
-        /* Section Styles */
-        section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 25px 20px; /* Reduced padding for less space between sections */
-            min-height: 80vh; /* Ensure sections span most of the viewport */
-        }
-
-        section h2 {
-            font-size: 2rem;
-            color: #000000;
-            margin-bottom: 20px; /* Add space below heading */
-        }
-
-        section p {
-            font-size: 1rem;
-            color: #cccccc;
-            text-align: center; /* Center-align the text */
-        }
-
-        /* Project Section */
-#projects {
-    display: flex; /* Flexbox to align project boxes horizontally */
-    flex-wrap: wrap; /* Allow project boxes to wrap to the next line if needed */
-    justify-content: center; /* Center the project boxes horizontally */
-    gap: 20px; /* Space between project boxes */
-    padding: 20px;
-}
-
-/* Project Boxes */
-.project-box {
-    width: 300px; /* Adjust the width of each project box */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-        .project-box h3 {
-            font-size: 1.5rem;
-            color: #0073e6;
-            margin-bottom: 10px;
-        }
-
-        .project-box h3 a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-
-        .project-box h3 a:hover {
-            text-decoration: underline;
-        }
-
-        .project-box p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 40px;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer p {
-            font-size: 1rem;
-        }
-
-        footer a {
-            color: #6ab0f3;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+        .container .box .box-cell.box3 {
+            background: lime;
+            text-align: justify;
         }
     </style>
 </head>
+
 <body>
-    <!-- Navigation Menu -->
-    <nav>
-        <ul class="nav-tabs">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
+    <center>
+        <h1 style="color:green;">GeeksforGeeks</h1>
+        <div class="container">
+            <div class="box">
+                <div class="box-row">
+                    <div class="box-cell box1">
+                        It is a good platform to learn programming.
+                        It is an educational website. Prepare for
+                        the Recruitment drive of product based
+                        companies like Microsoft, Amazon, Adobe etc
+                        with a free online placement preparation
+                        course.
+                    </div>
 
-    <!-- Header Section with Title on Left and Image on Right -->
-    <header>
-        <div>
-            <h1>NIHAARIKA AGARWAL</h1>
-            <p>MS Computer Science @ ASU</p>
+                    <div class="box-cell box2">
+                        The course focuses on various MCQ's &
+                        Coding question likely to be asked in
+                        the interviews & make your upcoming
+                        placement season efficient and successful.
+                    </div>
+
+                    <div class="box-cell box3">
+                        Any geeks can help other geeks by writing
+                        articles on the GeeksforGeeks, publishing
+                        articles follow few steps that are Articles
+                        that need little modification/improvement
+                        from reviewers are published first.
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="image-container"></div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm an MSCS student at ASU passionate about software development, machine learning, Natural language processing and exploring new technologies. My work spans AI, RPA, LLMs, and Python. I thrive on innovation and problem-solving, with an aim to create impactful, trustworthy solutions. Always eager to learn and grow.</p>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>List your work experience here.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Machine learning, NLP, RPA, Arduino <br> Coding languages: Python, C, C++, VB Script <br> Tools: MS excel, Github, JIRA</p>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research">
-        <h2>Research</h2>
-        <p>Describe your research interests and </p>
-    </section>
-
-    <!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project-box">
-        <h3><a href="https://github.com/project1" target="_blank">Project 1</a></h3>
-        <p>Brief description of Project 1 goes here. This is a two-line description.</p>
-    </div>
-    <div class="project-box">
-        <h3><a href="https://github.com/project2" target="_blank">Project 2</a></h3>
-        <p>Brief description of Project 2 goes here. This is a two-line description.</p>
-    </div>
-    <div class="project-box">
-        <h3><a href="https://github.com/project3" target="_blank">Project 3</a></h3>
-        <p>Brief description of Project 3 goes here. This is a two-line description.</p>
-    </div>
-</section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>
-            <a href="https://linkedin.com/in/nihaarikaagarwal" target="_blank">
-                <img src="Assets/linkedin.png" alt="LinkedIn" style="width:40px; height:40px; margin-right:10px;">
-            </a>
-            <a href="https://github.com/NihaarikaAgarwal" target="_blank">
-                <img src="Assets/github.png" alt="GitHub" style="width:40px; height:40px;">
-            </a>
-        </p>
-    </section>
-
-    <footer>
-    </footer>
+    </center>
 </body>
+
 </html>
